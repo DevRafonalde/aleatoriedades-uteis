@@ -11,6 +11,7 @@ import org.apache.batik.swing.JSVGCanvas;
 /**
  *
  * @author rafael.albuquerque
+ * Uso da biblioteca Apache Batik para usar SVG em Java
  */
 public class ProjetoDeTestes {
 
@@ -18,24 +19,18 @@ public class ProjetoDeTestes {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Create a new JFrame.
         JFrame f = new JFrame("Svg");
         ProjetoDeTestes app = new ProjetoDeTestes(f);
 
-        // Add components to the frame.
         f.getContentPane().add(app.createComponents());
-
-        // Display the frame.
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setSize(400, 400);
         f.setVisible(true);
         f.setLocationRelativeTo(null);
     }
 
-    // The frame.
     protected JFrame frame;
 
-    // The SVG canvas.
     protected JSVGCanvas svgCanvas = new JSVGCanvas();
 
     public ProjetoDeTestes(JFrame f) {
@@ -43,7 +38,6 @@ public class ProjetoDeTestes {
     }
 
     public JComponent createComponents() {
-        // Create a panel and add the button, status label and the SVG canvas.
         final JPanel panel = new JPanel(new BorderLayout());
 
         JPanel p = new JPanel(new FlowLayout(FlowLayout.LEFT));
