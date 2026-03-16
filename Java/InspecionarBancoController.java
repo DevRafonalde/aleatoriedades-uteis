@@ -5,6 +5,12 @@ import javax.sql.DataSource;
 import java.sql.*;
 import java.util.*;
 
+/**
+ *
+ * @author rafael.albuquerque
+ * Controlador para uma API para retornar a estrutura do banco de dados.
+ * Se atentar ao tamanho do banco. Se for muito grande, não vai funcionar.
+ */
 @RestController
 public class InspecionarBancoController {
 
