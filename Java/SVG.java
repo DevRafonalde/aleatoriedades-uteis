@@ -1,5 +1,3 @@
-package projeto.de.testes;
-
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.io.File;
